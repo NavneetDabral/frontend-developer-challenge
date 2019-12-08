@@ -15,13 +15,61 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:flex-start;
+  padding:0px 200px;
+  font-size: 14px;
   color: white;
+}
+
+content{
+  display:flex;
+  flex-direction:row;
+}
+
+#input{
+  border-bottom:solid 1px #1DE9B6;
+  outline:none;
+  opacity:0.8;
+}
+
+#input:focus{
+  border-bottom:solid 2px #1DE9B6;
+  opacity:1;
+  color:#ffffff;
+}
+input[type=text]{
+  border:none;
+  display:block;
+  color:#ffffff;
+  padding:10px;
+  font-size:18px;
+  font-family:'Lucida Casual', 'Comic Sans MS';
+  background:inherit;
+}
+
+button{
+ padding:8px 40px;
+ margin: 0px 10px;
+ background:inherit;
+ color:#ffffff;
+ outline:none;
+ border:solid #1DE9B6 1px;
+ border-radius:2em;
+ cursor:pointer;
+ font-weight:600;  
+}
+
+button:hover{
+  background-color:#1DE9B6;
+  color:black; 
+}
+
+button:active{
+  transform: translateY(2px);
 }
 
 .App-link {
@@ -36,3 +84,5 @@
     transform: rotate(360deg);
   }
 }
+
+
